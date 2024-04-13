@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@181.5,200..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: transparent url(../images/Road\ sign.webp) no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: #6D8EA0;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin: 2px;
+}
+
+.nav-bar {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar h1 {
+    margin: 0;
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    color: #2087af;
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.link-item {
+    margin-right: 20px;
+    color: black;
+    transition: color 0.3s, font-weight 0.2s;
+}
+
+.link-item:hover {
+    margin-right: 20px;
+    color: #1e7ea1;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    text-decoration: none;
+    color: #1e7ea1;
+}
+
+.links button{
+    background-color: #1e7ea1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    align-self: stretch;
+    box-shadow: 1px 1px black;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.links button a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.links button a:hover {
+    color: black;
+}
+
+.links button:hover {
+    box-shadow: -1px 0px 3px 3px rgba(0, 0, 0, 0.7);
+    color: black;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 100px;
+    flex: 1;
+    margin: 5px;
+    height: fit-content;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #F1F6F9;
+    display: grid;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+main h1, h3 {
+    margin-left: 40px;
+    font-family: "Poppins", sans-serif;
+    color: #103e4e;
+}
+
+main h1 {
+    font-size: 2.5rem;
+}
+
+main h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.container {
+    margin-top: -80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.container .card {
+    justify-content: center;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 30px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container .card:hover {
+    box-shadow: -1px -1px 10px 10px rgba(23, 88, 112, 0.2);
+}
+
+.card h2 {
+    text-align: center;
+    color: #103e4e;
+}
+
+.card img {
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+
+.card img:hover {
+    cursor: pointer;
+}
+
+.card button {
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #175870;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+    color: #175870;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    align-self: stretch;
+    box-shadow: 1px 1px black;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, 
+    box-shadow 0.3s, font-weight 0.3s;
+}
+
+.card button:hover {
+    box-shadow: -1px -1px 10px 10px rgba(23, 88, 112, 0.2);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+footer {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width : 1368px) {
+    main h1 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    main h3 {
+       font-size: 1.2rem;
+       font-weight: 500;
+       margin-bottom: 80px;
+    }
+    
+    .container {
+        margin-top: -80px;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 100px;
+        padding-top: 300px;
+    }
+    
+    .container .card {
+        justify-content: center;
+        max-width: 370px;
+        height: auto;
+        padding: 10px;
+        margin: 30px;
+        border-radius: 30px;
+        background: transparent;
+        backdrop-filter: blur(50px);
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card h2 {
+        text-align: center;
+        color: #103e4e;
+    }
+    
+    .card img {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    
+}

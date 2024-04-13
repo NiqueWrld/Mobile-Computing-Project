@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="#">
+
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Full name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="date" required>
+                <i class='bx bxs-'></i>
+            </div>
+
+            <div class="input-box-checkbox">
+                <h2>Select Gender</h2>
+                <input type="radio" class="checkbox" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Phone number" required>
+                <i class='bx bxs-phone'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Email address" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Have an account?<a href="../SignIn/index.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="../../refresh.js"></script>
+</body>
+
+</html>
