@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@181.5,200..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: transparent url(../images/Road\ sign.webp) no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #fff; 
+    color: #6D8EA0;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-bar {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar h1 {
+    margin: 0;
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    color: #2087af;
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.link-item {
+    margin-right: 20px;
+    color: black;
+    transition: color 0.3s, font-weight 0.2s;
+}
+
+.link-item:hover {
+    margin-right: 20px;
+    color: #1e7ea1;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    text-decoration: none;
+    color: #1e7ea1;
+}
+
+.links button{
+    background-color: #1e7ea1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    align-self: stretch;
+    box-shadow: 1px 1px black;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.links button a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.links button a:hover {
+    color: black;
+}
+
+.links button:hover {
+    box-shadow: -1px 0px 3px 3px rgba(0, 0, 0, 0.7);
+    color: black;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 100px;
+    flex: 1;
+    margin: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #F1F6F9;
+    display: grid;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+}

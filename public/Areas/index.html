@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaflet Map with Pins</title>
+  <link rel="stylesheet" href="../home.css">
+  <!-- Include Leaflet CSS and JavaScript -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Include Leaflet.awesome-markers CSS and JavaScript for custom markers -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.awesome-markers/dist/leaflet.awesome-markers.css" />
+  <script src="https://unpkg.com/leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+  
+  <style>
+    /* Style the map container */
+    #map {
+      height: 700px;  /* Adjust height as needed */
+      width: 90%;    /* Adjust width as needed */
+      border-radius: 30px ;
+      margin-left: 80px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <span><h1>RoadReady  Driving school</h1></span>
+            <ul class="links">
+                <li class="link-item"><a href="../index.html">Home</a></li>
+                <li class="link-item"><a href="../Courses/index.html">Courses</a></li>
+                <li class="link-item"><a href="">Prices</a></li>
+                <li class="link-item"><a href="">About</a></li>
+                <li class="link-item"><a href="" target="_blank">Contact Us</a></li>
+                <button onclick="window.location.href='../User/SignIn/index.html'"><a target="_blank">sign in</a></button>
+            </ul>
+        </div>
+    </header>
+<!-- Map container -->
+<div id="map"></div>
+
+<script>
+  // Initialize the map
+  var map = L.map('map').setView([-29.845304, 30.997210], 12); // Set initial view and zoom level
+
+  // Add tile layer from OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Coordinates for the pins
+  var pin1 = L.marker([-29.863285, 30.999086]).bindPopup('Ferguson Branch').addTo(map); // First coordinates
+  var pin2 = L.marker([-29.827323, 31.015334]).bindPopup('Morningside Brach').addTo(map); // Second coordinates
+</script>
+<script src="../manager.js"></script>
+</body>
+</html>
